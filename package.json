@@ -1,0 +1,16 @@
+{
+  "name": "aetherguard-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
+  },
+  "scripts": {
+    "build": "bun --filter '*' run build",
+    "test": "bun --filter '*' run test"
+  }
+}
