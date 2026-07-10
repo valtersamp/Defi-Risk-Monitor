@@ -1,0 +1,27 @@
+[package]
+name = "aetherguard-core"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Mathematical Invariant Firewall & Financial OS Core for Autonomous AI Agents"
+readme = "../../README.md"
+documentation = "https://docs.rs/aetherguard-core"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+chrono.workspace = true
+sha2.workspace = true
+ed25519-dalek.workspace = true
+rand.workspace = true
+hex.workspace = true
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "invariant_throughput"
+harness = false
