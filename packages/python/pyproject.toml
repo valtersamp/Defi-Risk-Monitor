@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aetherguard"
+version = "0.2.0"
+description = "Mathematical Invariant Firewall and Financial OS for Autonomous AI Agents"
+readme = "README.md"
+authors = [{ name = "valtersamp", email = "valtersamp@users.noreply.github.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+requires-python = ">=3.9"
+dependencies = [
+    "cryptography>=41.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/valtersamp/Defi-Risk-Monitor"
+Repository = "https://github.com/valtersamp/Defi-Risk-Monitor"
+Documentation = "https://github.com/valtersamp/Defi-Risk-Monitor/blob/main/STRIDE_THREAT_MODEL.md"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["aetherguard*"]
